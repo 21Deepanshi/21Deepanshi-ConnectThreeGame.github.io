@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+}
+body{
+    background: linear-gradient(#f65050, #8c94e5) fixed;
+    text-align: center;
+}
+h1{
+    font-size: 3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.7px;
+    animation-name: heading;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;  
+}
+@keyframes heading {
+  0%   
+    {
+        color: rgba(255,255,255);
+    }
+  25%  
+    {
+        color: rgb(250, 177, 118);
+    }
+  50%  
+    {
+        color: rgb(251, 156, 92);
+    }
+  75%  
+    {
+        color: rgb(252, 149, 58);
+
+    }
+  100% 
+    {
+        color: rgb(252, 79, 16);
+    }
+}
+span{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-family: system-ui, sans-serif;
+    letter-spacing: 1.5px;
+    color: #531313;
+    font-weight: 900;
+}
+li{
+    list-style: none;
+    font-size: x-large;
+    word-spacing: 1px;
+    color: whitesmoke;
+}
+h2{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-family:'Calibri';
+    letter-spacing: 1.5px;
+    color: #531313;
+}
+table {
+    border-collapse: separate;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vmin;
+    margin: 0;
+}
+td {
+    width: 5vmin;
+    height: 5vmin;
+    border: 2px solid #32021d;
+    text-align: center;
+    font-size: 5vmin;
+    font-weight: 600;
+    font-family: arial;
+    border-top: none !important;
+}
+.fall {
+    animation-name: fall-animation;
+    animation-iteration-count: inherit;
+    animation-duration: 3000ms;
+}
+
+@keyframes fall-animation {
+    from {
+        transform: translateY(-500px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+.restart{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+#button{
+    background-color: #531313;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
