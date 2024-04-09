@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Connect Three Games</title>
+  <link rel="stylesheet" href="GLA3.css"> 
+</head>
+<body>
+    <h1>Connect Three Game</h1>
+    <span>Rules</span>
+    <ul>
+    <li>Each player is assigned a pair of opposite sides of the board which they must try to connect by taking turns placing a stone of their color onto any empty space.</li>
+    <li>Once placed, the stones cannot be moved or removed.</li>
+    <li>A player wins when they successfully connect their sides together.The line can be horizontal, vertical, or diagonal.</li>
+    </ul>
+    <h2 id = "turnMessage">Turn of X</h2>
+    <table id ="board">
+        <tr>
+            <td id="cell00" onclick="cellClicked(0, 0)"></td>
+            <td id="cell01" onclick="cellClicked(0, 1)"></td>
+            <td id="cell02" onclick="cellClicked(0, 2)"></td>
+        </tr>
+        <tr>
+            <td id="cell10" onclick="cellClicked(1, 0)"></td>
+            <td id="cell11" onclick="cellClicked(1, 1)"></td>
+            <td id="cell12" onclick="cellClicked(1, 2)"></td>
+        </tr>
+        <tr>
+            <td id="cell20" onclick="cellClicked(2, 0)"></td>
+            <td id="cell21" onclick="cellClicked(2, 1)"></td>
+            <td id="cell22" onclick="cellClicked(2, 2)"></td>
+        </tr>
+        <tr>
+            <td id="cell30" onclick="cellClicked(3, 0)"></td>
+            <td id="cell31" onclick="cellClicked(3, 1)"></td>
+            <td id="cell32" onclick="cellClicked(3, 2)"></td>
+        </tr>
+        <tr>
+            <td id="cell40" onclick="cellClicked(4, 0)"></td>
+            <td id="cell41" onclick="cellClicked(4, 1)"></td>
+            <td id="cell42" onclick="cellClicked(4, 2)"></td>
+        </tr>
+        <tr>
+            <td id="cell50" onclick="cellClicked(5, 0)"></td>
+            <td id="cell51" onclick="cellClicked(5, 1)"></td>
+            <td id="cell52" onclick="cellClicked(5, 2)"></td>
+        </tr>
+    </table>
+    <br>
+    <div class="restart">
+        <button id="button">Restart</button>
+    </div>
+<script src="GLA3.js"></script>
+</body>
+</html>
